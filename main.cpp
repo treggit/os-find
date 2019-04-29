@@ -94,7 +94,7 @@ std::optional<find_config> parse_args(int argc, char* argv[]) {
 }
 
 void print_error(string const& message) {
-    cout << message + ": " + strerror(errno);
+    cout << message + ": " + strerror(errno) << endl;
 }
 
 namespace {
